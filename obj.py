@@ -17,9 +17,32 @@
         else:
             return False
 
-p1=Player("F",110)
-p2=Player("M",100)
-p1.playerHurt(20)
-p2.playerHurt(100)
-print(p1.isDead()) 
-print(p2.isDead()
+def healthstring(self):
+   if health >= 80 return "Healthy"
+    elif health >=70 and <80 return "Stable"
+    elif health >=60 and <70 return "Weak"
+    elif health >0 and <60 return "Critical"
+    elif health <=0 return "Dead"
+
+def attack(self,target):
+    outcome=random.randint(1,2)
+    if outcome==1:
+        damage=random.randint(5,20)
+        target.playerHurt(damage)
+        print(self.name, "attacked", target name,
+              "attack succedded with damage",damage)
+    
+
+
+p1=Player("F",110, "Carla:, "axe',40)
+p2=Player("M",100, "Maya", "sword",70)
+p3.=Player(20, Carlos, "knife", 80)
+players=(p1,p2,p3) + list of three players
+combantants=random.sample(players,2)
+attacker=combatants[0]
+target=combatants[1]
+attacker.attack(target)
+for x in players:
+#    print(x.name, x.health, x.healthstring())
+
+      
